@@ -1,1 +1,188 @@
-/* TODO */
+html {
+  font-family: 'Arial Cyr', sans-serif;
+  font-stretch: extra-condensed;
+}
+div {
+  overflow: hidden;
+}
+a {
+  color: #4c4cd8;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+}
+
+a.anchor {
+  display: block;
+  visibility: hidden;
+}
+.anchor {
+  position: relative;
+  top: -100px;
+}
+
+.opaque {
+  background-color: white;
+}
+.sticky {
+  position: sticky;
+}
+
+.small-icon {
+  width: 20px;
+  height: 20px;
+}
+.big-icon {
+  width: 40px;
+  height: 40px;
+}
+.average-size-image {
+  width: 240px;
+  height: 240px;
+}
+.big-size-image {
+  width: 400px;
+  height: 400px;
+}
+
+.ellipsis-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.full-text {
+  overflow-wrap: break-word;
+}
+
+.muted {
+  color: #707070;
+}
+.hidden-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.border {
+  border: rgba(0, 0, 0, 0.16) 1px solid;
+}
+.border-top {
+  border-top: rgba(0, 0, 0, 0.16) 1px solid;
+}
+.border-bottom {
+  border-bottom: rgba(0, 0, 0, 0.16) 1px solid;
+}
+.shadow:hover {
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.32);
+}
+
+body {
+  margin: 0;
+}
+body > * {
+  width: 100%;
+}
+
+header {
+  top: 0;
+}
+header > * {
+  width: max-content;
+  margin: 0 auto;
+  padding: 0.5rem 1.6rem;
+}
+header .site-name {
+  font-family: 'PT SansNarrow', sans-serif;
+  font-size: 32px;
+}
+header .site-name:first-letter {
+  color: red;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 1rem 1.6rem;
+}
+
+.switcher {
+  padding-left: 1px;
+}
+
+.cat-card-container > * {
+  float: left;
+}
+.cat-list > * {
+  width: max-content;
+  height: 400px;
+}
+.cat-card {
+  margin: 0.6rem 1.2rem 0.6rem 0;
+}
+.cat-item {
+  margin: 1.2rem 1.2rem 1.2rem 0;
+}
+.cat-item > * {
+  float: left;
+}
+.cat-card .cat-description {
+  width: 240px;
+  height: 160px;
+}
+.cat-item .cat-description {
+  width: calc(96vw - 400px);
+}
+.cat-card .cat-description > div {
+  margin: 0.8rem;
+}
+.cat-item .cat-description > div {
+  margin: 1.2rem;
+}
+.cat-card .cat-description .cat-name {
+  font-size: 1.5rem;
+}
+.cat-item .cat-description .cat-name {
+  font-size: 2rem;
+}
+.cat-item .cat-description .cat-information {
+  font-size: 1.2rem;
+}
+.cat-card .cat-description .cat-information > div {
+  margin-right: 0.4rem;
+}
+.cat-card .cat-description .cat-information .cat-status {
+  margin-top: 1.2rem;
+}
+.cat-item .cat-description .cat-information > div {
+  margin-right: 1.5rem;
+}
+
+footer {
+  bottom: 0;
+}
+footer .wrapper {
+  padding: 0.5rem 1.6rem;
+}
+footer .wrapper > * {
+  display: inline-block;
+}
+footer .wrapper > * > * {
+  margin-top: 4px;
+}
+footer .wrapper > *:last-child {
+  text-align: right;
+}
+footer .wrapper .contacts {
+  width: 50%;
+}
+footer .wrapper .contacts .email {
+  display: table;
+}
+footer .wrapper .contacts .email > * {
+  display: table-cell;
+}
+footer .wrapper .contacts .email .email-icon {
+  margin-right: 5px;
+}
+footer .wrapper .contacts .email .email-address {
+  vertical-align: middle;
+}
+footer .wrapper .copyright {
+  width: 49%;
+}
