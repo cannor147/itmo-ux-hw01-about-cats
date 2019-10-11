@@ -85,9 +85,9 @@ a.anchor {
 body {
   position: relative;
 
-  min-height: 8vh;
+  min-height: 100vh;
   margin: 0;
-  padding-bottom: 10vh;
+  padding-bottom: 8vh;
 }
 
 body > header {
