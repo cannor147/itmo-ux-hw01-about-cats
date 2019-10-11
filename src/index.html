@@ -4,32 +4,25 @@
     <meta charset="utf-8">
     <title>01-about-cats</title>
     <link href="./index.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arial+Cyr&amp;display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arial&amp;display=swap"
-          rel="stylesheet">
   </head>
   <body>
-    <header id="header" class="sticky border-bottom opaque">
-      <div class="site-name centered">
+    <header class="sticky border-bottom opaque">
+      <h1 class="site-name centered">
         <a class="hidden-link-without-hover" href="index.html">Мурмаркет</a>
-      </div>
+      </h1>
     </header>
-    <div class="content">
-      <input type="checkbox" class="switcher" id="switcher">
-      <div class="cat-container">
-        <div class="cat-card border shadow">
+    <main>
+      <input id="switcher" title="Change view" type="checkbox" class="switcher">
+      <label for="switcher" class="switcherLabel"></label>
+      <ul class="cat-container">
+        <li class="cat-card border shadow">
           <a id="cat-1" class="anchor"></a>
           <img title="Шуня" alt="Шуня"
                class="cat-image" src="images/avatar/1.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Шуня">
+            <h2 class="cat-name ellipsis-text" title="Шуня">
               <a class="hidden-link">Шуня</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Активная, игривая.
@@ -52,15 +45,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="cat-card border shadow">
+        </li>
+        <li class="cat-card border shadow">
           <a id="cat-2" class="anchor"></a>
           <img title="Костик" alt="Костик"
                class="cat-image" src="images/avatar/2.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Костик">
+            <h2 class="cat-name ellipsis-text" title="Костик">
               <a class="hidden-link">Костик</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Активный, непоседа.
@@ -83,15 +76,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="cat-card border shadow">
+        </li>
+        <li class="cat-card border shadow">
           <a id="cat-3" class="anchor"></a>
           <img title="Венера" alt="Венера"
                class="cat-image" src="images/avatar/3.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Венера">
+            <h2 class="cat-name ellipsis-text" title="Венера">
               <a class="hidden-link">Венера</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Спокойная, умная.
@@ -114,15 +107,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="cat-card border shadow">
+        </li>
+        <li class="cat-card border shadow">
           <a id="cat-4" class="anchor"></a>
           <img title="Блиц" alt="Блиц"
                class="cat-image" src="images/avatar/4.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Блиц">
+            <h2 class="cat-name ellipsis-text" title="Блиц">
               <a class="hidden-link">Блиц</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Озорной, забавный, ласковый.
@@ -146,15 +139,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="cat-card border shadow">
+        </li>
+        <li class="cat-card border shadow">
           <a id="cat-5" class="anchor"></a>
           <img title="Сирена" alt="Сирена"
                class="cat-image" src="images/avatar/5.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Сирена">
+            <h2 class="cat-name ellipsis-text" title="Сирена">
               <a class="hidden-link">Сирена</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Активная, общительная.
@@ -176,15 +169,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="cat-card border shadow">
+        </li>
+        <li class="cat-card border shadow">
           <a id="cat-6" class="anchor"></a>
           <img title="Серафим Иванович" alt="Серафим Иванович"
                class="cat-image" src="images/avatar/6.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Серафим Иванович">
+            <h2 class="cat-name ellipsis-text" title="Серафим Иванович">
               <a class="hidden-link">Серафим Иванович</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Спокойный, дружелюбный.
@@ -207,15 +200,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="cat-card border shadow">
+        </li>
+        <li class="cat-card border shadow">
           <a id="cat-7" class="anchor"></a>
           <img title="Снежинка" alt="Снежинка"
                class="cat-image" src="images/avatar/7.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Снежинка">
+            <h2 class="cat-name ellipsis-text" title="Снежинка">
               <a class="hidden-link">Снежинка</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Чистоплотная, добрая, милая.
@@ -235,15 +228,15 @@
               <div class="cat-text full-text"></div>
             </div>
           </div>
-        </div>
-        <div class="cat-card border shadow">
+        </li>
+        <li class="cat-card border shadow">
           <a id="cat-8" class="anchor"></a>
           <img title="Тарас" alt="Тарас"
                class="cat-image" src="images/avatar/8.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Тарас">
+            <h2 class="cat-name ellipsis-text" title="Тарас">
               <a class="hidden-link">Тарас</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Дружелюбный, ласковый.
@@ -265,15 +258,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="cat-card border shadow">
+        </li>
+        <li class="cat-card border shadow">
           <a id="cat-9" class="anchor"></a>
           <img title="Люси" alt="Люси"
                class="cat-image" src="images/avatar/9.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Люси">
+            <h2 class="cat-name ellipsis-text" title="Люси">
               <a class="hidden-link">Люси</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Глупенькая, забавная.
@@ -295,15 +288,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="cat-card border shadow">
+        </li>
+        <li class="cat-card border shadow">
           <a id="cat-10" class="anchor"></a>
           <img title="Луна" alt="Луна"
                class="cat-image" src="images/avatar/10.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Луна">
+            <h2 class="cat-name ellipsis-text" title="Луна">
               <a class="hidden-link">Луна</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Нежная, спокойная, ласковая.
@@ -327,15 +320,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="cat-card border shadow">
+        </li>
+        <li class="cat-card border shadow">
           <a id="cat-11" class="anchor"></a>
           <img title="Лаврентий" alt="Лаврентий"
                class="cat-image" src="images/avatar/11.jpg"/>
           <div class="cat-description">
-            <div class="cat-name ellipsis-text" title="Лаврентий">
+            <h2 class="cat-name ellipsis-text" title="Лаврентий">
               <a class="hidden-link">Лаврентий</a>
-            </div>
+            </h2>
             <div class="cat-information muted">
               <div class="cat-character full-text">
                 Любящий, общительный, активный.
@@ -359,14 +352,13 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-    </div>
-    <footer id="footer" class="border-top">
+        </li>
+      </ul>
+    </main>
+    <footer class="border-top">
       <div class="wrapper">
         <div class="contacts">
-          <span class="muted">Напишите нам:</span>
+          <div class="write-us muted">Напишите нам:</div>
           <div class="email">
             <img class="email-icon small-icon" src="images/icon/email.png" alt="email">
             <a class="email-address">cats@babuli.ru</a>
@@ -377,7 +369,7 @@
           </div>
         </div>
         <div class="copyright">
-          <div>Icons made by
+          <div class="icons-made-by">Icons made by
             <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
             and
             <a href="https://www.flaticon.com/authors/google" title="Google">Google</a>

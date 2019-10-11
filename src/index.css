@@ -6,6 +6,15 @@ html {
 div {
   overflow: hidden;
 }
+ul {
+  overflow: hidden;
+}
+li {
+  overflow: hidden;
+}
+h2 {
+  overflow: hidden;
+}
 a {
   color: #4c4cd8;
   cursor: pointer;
@@ -74,71 +83,76 @@ a.anchor {
 }
 
 body {
+  position: relative;
+
+  min-height: 8vh;
   margin: 0;
-}
-body > * {
-  width: 100%;
+  padding-bottom: 10vh;
 }
 
-#header {
+body > header {
   top: 0;
+  z-index: 1;
+
+  width: 100%;
 }
-#header .site-name {
+body > header .site-name {
   width: max-content;
   margin: 0 auto;
   padding: 0.5rem 1.6rem;
 
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 32px;
+  font-weight: normal;
 }
-#header .site-name:first-letter {
+body > header .site-name:first-letter {
   color: red;
 }
 
-.content {
+body > main {
   box-sizing: border-box;
-  padding: 0 1.6rem 1rem;
+  width: 100%;
+  padding: 1rem 1.6rem 0;
 }
 
-#switcher[type='checkbox'] {
-  position: relative;
+.switcher {
+  display: none;
 
-  display: inline-block;
-
-  width: 0;
-  height: 0;
-  margin: 0 0 40px 1px;
-
-  content: '';
+  margin: 0;
 }
-#switcher[type='checkbox']:hover {
-  cursor: pointer;
-}
-#switcher[type='checkbox']:before {
+.switcherLabel {
   display: inline-block;
 
   width: 40px;
   height: 40px;
+  margin-left: 1px;
 
   background-image: url('images/icon/list.png');
   background-size: 40px 40px;
   content: '';
 }
-#switcher[type='checkbox']:checked:before {
-  display: inline-block;
-
-  width: 40px;
-  height: 40px;
-
+.switcherLabel:hover {
+  cursor: pointer;
+}
+.switcher:checked ~ .switcherLabel {
   background-image: url('images/icon/cards.png');
-  background-size: 40px 40px;
-  content: '';
+}
+
+.cat-container {
+  display: block;
+
+  margin-top: 0;
+  padding-left: 0;
 }
 
 .cat-container > .cat-card {
   float: left;
 
+  display: block;
+
   margin: 0.6rem 1.2rem 0.6rem 0;
+
+  list-style-type: none;
 }
 .cat-container > .cat-card .cat-image {
   width: 240px;
@@ -152,7 +166,10 @@ body > * {
   margin: 0.8rem;
 }
 .cat-container > .cat-card .cat-description .cat-name {
+  margin: 0.8rem;
+
   font-size: 1.5rem;
+  font-weight: normal;
 }
 .cat-container > .cat-card .cat-description .cat-information .cat-character,
 .cat-container > .cat-card .cat-description .cat-information .cat-text {
@@ -165,77 +182,95 @@ body > * {
   margin-top: 1.2rem;
 }
 
-#switcher:checked ~ .cat-container > .cat-card {
+.switcher:checked ~ .cat-container > .cat-card {
   float: none;
+
+  display: block;
 
   min-width: 800px;
   height: 400px;
 
   margin: 1.2rem 1.2rem 1.2rem 0;
+
+  list-style-type: none;
 }
-#switcher:checked ~ .cat-container .cat-card .cat-image {
+.switcher:checked ~ .cat-container .cat-card .cat-image {
   float: left;
 
   width: 400px;
   height: 400px;
 }
-#switcher:checked ~ .cat-container > .cat-card .cat-description {
+.switcher:checked ~ .cat-container > .cat-card .cat-description {
   float: left;
 
   width: calc(92vw - 400px);
   height: max-content;
 }
-#switcher:checked ~ .cat-container > .cat-card .cat-description > div {
+.switcher:checked ~ .cat-container > .cat-card .cat-description > div {
   margin: 1.2rem;
 }
-#switcher:checked ~ .cat-container > .cat-card .cat-description .cat-name {
+.switcher:checked ~ .cat-container > .cat-card .cat-description .cat-name {
   font-size: 2rem;
 }
-#switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information .cat-character,
-#switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information .cat-text {
+.switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information .cat-character,
+.switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information .cat-text {
   display: block;
 }
-#switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information .cat-status,
-#switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information .cat-breed,
-#switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information .cat-diseases {
+.switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information .cat-status,
+.switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information .cat-breed,
+.switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information .cat-diseases {
   display: none;
 }
-#switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information > div {
+.switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information > div {
   margin-right: 1.5rem;
 }
-#switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information {
+.switcher:checked ~ .cat-container > .cat-card .cat-description .cat-information {
   font-size: 1.2rem;
 }
 
-#footer {
+body > footer {
+  position: absolute;
   bottom: 0;
+
+  width: 100%;
+  height: 8vh;
 }
-#footer .wrapper {
+body > footer .wrapper {
   padding: 0.5rem 1.6rem;
 }
-#footer .wrapper > * {
+.contacts {
   display: inline-block;
-}
-#footer .wrapper > * > * {
-  margin-top: 4px;
-}
-#footer .wrapper .contacts {
+
   width: 50%;
 }
-#footer .wrapper .contacts .email {
+.contacts > .write-us {
+  margin-top: 4px;
+}
+.contacts .email {
   display: table;
+
+  margin-top: 4px;
 }
-#footer .wrapper .contacts .email > * {
+.contacts .email .email-icon {
   display: table-cell;
-}
-#footer .wrapper .contacts .email .email-icon {
+
   margin-right: 5px;
 }
-#footer .wrapper .contacts .email .email-address {
+.contacts .email .email-address {
+  display: table-cell;
+
   vertical-align: middle;
 }
-#footer .wrapper .copyright {
+.copyright {
+  display: inline-block;
+
   width: 49%;
 
   text-align: right;
+}
+.copyright > .icons-made-by {
+  margin-top: 4px;
+}
+.copyright > .site-copyright {
+  margin-top: 4px;
 }
